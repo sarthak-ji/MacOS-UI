@@ -3,11 +3,11 @@ import "../src/app.scss"
 import Dock from "./components/Dock"
 import Nav from "./components/Nav"
 import Github from './components/windows/Github'
-// import Resume from './components/windows/Resume'
-// import Spotify from './components/windows/Spotify'
+import Spotify from './components/windows/Spotify'
 // import Cli from './components/windows/Cli'
-// import Notes from './components/windows/Notes'
-// import Github from './components/windows/Github'
+import Notes from './components/windows/Notes'
+import Resume from './components/windows/Resume'
+
 
 const App = () => {
 
@@ -23,6 +23,9 @@ const App = () => {
       <Nav />
       <Dock windowState={windowState} setWindowState={setWindowState}/>
       <Github />
+      <Notes />
+      <Resume />
+      <Spotify />
       {/* { windowState.github && <Github windowName="github" setWindowState={setWindowState} /> }
       { windowState.resume && <Resume windowName="resume" setWindowState={setWindowState} /> }
       { windowState.cli && <Cli windowName="cli" setWindowState={setWindowState} /> }

@@ -2,6 +2,13 @@
   background-color: black;
   border-radius: 0.75rem;
   height: 100%;
+  width: 100%;
+
+  // Use flexbox so .main-content correctly fills the space below the nav
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
   color: rgb(168, 168, 168);
   font-family:
     system-ui,
@@ -57,10 +64,37 @@
     }
   }
   .main-content {
+    // Take all remaining vertical space (below the nav)
+    flex: 1 1 auto;
+    min-height: 0;
     height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
-  *::-webkit-scrollbar {
-    width: 8px;
+  // macOS-style scrollbar
+  ::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 100px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.45);
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
   }
 }
