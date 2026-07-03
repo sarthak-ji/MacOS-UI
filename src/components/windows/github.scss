@@ -1,0 +1,139 @@
+.cards {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 93%;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    padding-bottom: 10rem;
+
+    // macOS-style scrollbar
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .card {
+        // macOS system font stack
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+            "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        flex-grow: 1;
+        flex-basis: 18rem;
+        max-width: 22rem;
+
+        padding: 0.85rem;
+
+        // Frosted glass / vibrancy effect
+        background-color: rgba(40, 40, 42, 0.55);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+        // macOS-like rounded corners and subtle border
+        border-radius: 0.75rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+
+        // Soft layered shadow typical of macOS
+        box-shadow:
+            0 1px 0 rgba(255, 255, 255, 0.06) inset,
+            0 1px 2px rgba(0, 0, 0, 0.2),
+            0 8px 24px rgba(0, 0, 0, 0.25);
+
+        color: rgb(235, 235, 237);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                0 1px 0 rgba(255, 255, 255, 0.08) inset,
+                0 2px 4px rgba(0, 0, 0, 0.25),
+                0 12px 32px rgba(0, 0, 0, 0.35);
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        h1 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .description {
+            font-size: 0.85rem;
+            opacity: 0.78;
+            line-height: 1.45;
+            color: rgb(220, 220, 222);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+
+            .tag {
+                // macOS-style pill / capsule tag
+                font-size: 0.7rem;
+                font-weight: 500;
+                color: rgb(220, 220, 222);
+                background-color: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.06);
+                border-radius: 999px;
+                padding: 0.25rem 0.65rem;
+                white-space: nowrap;
+                width: fit-content;
+                transition: background-color 0.2s ease;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.14);
+                }
+            }
+        }
+
+        .urls {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: auto;
+            padding-top: 0.25rem;
+
+            a {
+                // macOS accent blue link styling
+                color: #0a84ff;
+                font-size: 0.8rem;
+                font-weight: 500;
+                text-decoration: none;
+                padding: 0.3rem 0.7rem;
+                border-radius: 0.4rem;
+                background-color: rgba(10, 132, 255, 0.12);
+                transition: background-color 0.2s ease, color 0.2s ease;
+
+                &:hover {
+                    background-color: rgba(10, 132, 255, 0.22);
+                    color: #4da3ff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "image": "https://picsum.photos/seed/project1/600/400",
+    "title": "Taskify",
+    "description": "A minimal and intuitive task management app built with React and local storage persistence.",
+    "tags": ["React", "JavaScript", "CSS"],
+    "repoLink": "https://github.com/sarthak-ji/taskify",
+    "demoLink": "https://taskify-demo.netlify.app"
+  },
+  {
+    "id": 2,
+    "image": "https://picsum.photos/seed/project2/600/400",
+    "title": "WeatherVue",
+    "description": "A clean weather dashboard that provides real-time forecasts using the OpenWeather API.",
+    "tags": ["Vue", "API", "TailwindCSS"],
+    "repoLink": "https://github.com/sarthak-ji/weathervue",
+    "demoLink": "https://weathervue.vercel.app"
+  },
+  {
+    "id": 3,
+    "image": "https://picsum.photos/seed/project3/600/400",
+    "title": "DevConnect",
+    "description": "A social platform for developers to share projects, post updates, and collaborate on ideas.",
+    "tags": ["Node.js", "Express", "MongoDB"],
+    "repoLink": "https://github.com/sarthak-ji/devconnect",
+    "demoLink": "https://devconnect-app.herokuapp.com"
+  },
+  {
+    "id": 4,
+    "image": "https://picsum.photos/seed/project4/600/400",
+    "title": "PixelPaint",
+    "description": "A lightweight in-browser drawing tool with brush controls, color picker, and export to PNG.",
+    "tags": ["HTML5 Canvas", "JavaScript", "CSS"],
+    "repoLink": "https://github.com/sarthak-ji/pixelpaint",
+    "demoLink": "https://pixelpaint-app.netlify.app"
+  },
+  {
+    "id": 5,
+    "image": "https://picsum.photos/seed/project5/600/400",
+    "title": "ChatSphere",
+    "description": "A real-time chat application supporting group rooms, typing indicators, and message history.",
+    "tags": ["Socket.io", "React", "Node.js"],
+    "repoLink": "https://github.com/sarthak-ji/chatsphere",
+    "demoLink": "https://chatsphere-demo.up.railway.app"
+  },
+  {
+    "id": 6,
+    "image": "https://picsum.photos/seed/project6/600/400",
+    "title": "BookShelf",
+    "description": "A personal book tracker that lets users catalog reads, rate books, and track progress over time.",
+    "tags": ["Next.js", "PostgreSQL", "Prisma"],
+    "repoLink": "https://github.com/sarthak-ji/bookshelf",
+    "demoLink": "https://bookshelf-tracker.vercel.app"
+  },
+  {
+    "id": 7,
+    "image": "https://picsum.photos/seed/project7/600/400",
+    "title": "FitTrack",
+    "description": "A fitness companion app for logging workouts, tracking calories, and visualizing progress charts.",
+    "tags": ["React Native", "Firebase", "Redux"],
+    "repoLink": "https://github.com/sarthak-ji/fittrack",
+    "demoLink": "https://fittrack-app.expo.dev"
+  },
+  {
+    "id": 8,
+    "image": "https://picsum.photos/seed/project8/600/400",
+    "title": "MarkdownMate",
+    "description": "A live markdown editor with split preview, syntax highlighting, and one-click export to HTML.",
+    "tags": ["TypeScript", "Vite", "SCSS"],
+    "repoLink": "https://github.com/sarthak-ji/markdownmate",
+    "demoLink": "https://markdownmate.netlify.app"
+  },
+  {
+    "id": 9,
+    "image": "https://picsum.photos/seed/project9/600/400",
+    "title": "CryptoDash",
+    "description": "A cryptocurrency dashboard with live prices, market cap trends, and a watchlist feature.",
+    "tags": ["React", "Chart.js", "CoinGecko API"],
+    "repoLink": "https://github.com/sarthak-ji/cryptodash",
+    "demoLink": "https://cryptodash-live.vercel.app"
+  },
+  {
+    "id": 10,
+    "image": "https://picsum.photos/seed/project10/600/400",
+    "title": "PortfolioX",
+    "description": "A customizable portfolio template with dark mode, smooth animations, and a contact form.",
+    "tags": ["React", "Framer Motion", "SCSS"],
+    "repoLink": "https://github.com/sarthak-ji/portfoliox",
+    "demoLink": "https://portfoliox-template.netlify.app"
+  }
+]
+ 
