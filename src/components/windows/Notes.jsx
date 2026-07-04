@@ -19,7 +19,7 @@ const Notes = ({ windowName, setWindowState }) => {
     }, [])
 
   return (
-    <MacWindow windowName={windowName} setWindowsState={setWindowState}>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <div className="note-window">
             {markdown ? <SyntaxHighlighter language='typescript' style={docco}>{markdown}</SyntaxHighlighter> : <p>Loading...</p>}
         </div>

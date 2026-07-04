@@ -4,7 +4,7 @@ import "./resume.scss"
 
 const Resume = ({ windowName, setWindowState }) => {
   return (
-    <MacWindow windowName={windowName} setWindowsState={setWindowState}>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <div className="resume-window">
             <iframe src="/public/sample-resume.pdf" frameborder="0"></iframe>
         </div>
