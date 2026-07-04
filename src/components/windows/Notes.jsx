@@ -8,7 +8,7 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 
 
 // Note.txt/md file ko React.js me render karwane ke liye - "npm i react-markdown"
-const Notes = () => {
+const Notes = ({ windowName, setWindowState }) => {
 
     const [markdown, setMarkdown] = useState(null);
 
@@ -19,7 +19,7 @@ const Notes = () => {
     }, [])
 
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowsState={setWindowState}>
         <div className="note-window">
             {markdown ? <SyntaxHighlighter language='typescript' style={docco}>{markdown}</SyntaxHighlighter> : <p>Loading...</p>}
         </div>
