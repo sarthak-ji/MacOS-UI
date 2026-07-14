@@ -1,5 +1,5 @@
 .window {
-  background-color: black;
+  background-color: #212121;
   border-radius: 0.75rem;
   height: 100%;
   width: 100%;
@@ -27,7 +27,7 @@
   .nav {
     padding-inline: 0.75rem;
     padding-block: 0.5rem;
-    border-bottom: 1px solid rgba(245, 245, 245, 0.24);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.164);
 
     cursor: move;
     user-select: none;

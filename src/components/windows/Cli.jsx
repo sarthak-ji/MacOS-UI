@@ -7,7 +7,7 @@ const Cli = ({ windowName, setWindowState }) => {
     <MacWindow windowName={windowName} setWindowState={setWindowState}>
         <div className="cli-window">
             <Terminal 
-                className="terminal"
+                className="terminal "
                 commands={{}}
                 welcomeMessage={"Welcome to the terminal!"}
                 promptLabel={"sarthaksrivastava:~$"}
